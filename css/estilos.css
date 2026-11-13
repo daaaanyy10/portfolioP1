@@ -1,0 +1,41 @@
+/* =====================================================
+   estilos.css - Portfolio de Dany Megías Maya (Entrega 1)
+   Va después de Bootstrap. Solo lo que Bootstrap no hace.
+   ===================================================== */
+
+/* Para que el navbar fijo no tape el título al hacer clic en un enlace */
+.seccion {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Foto de perfil con tamaño fijo */
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+/* Capturas de los proyectos con la misma proporción */
+.imagen-proyecto {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .avatar {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+/* Botones flotantes de subir/bajar: por encima del navbar fijo */
+.botones-flotantes {
+  z-index: 1030;
+}
+
+/* Desplazamiento suave (si el usuario no pide menos movimiento) */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
